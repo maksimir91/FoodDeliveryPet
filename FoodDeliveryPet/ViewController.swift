@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         let label = UILabel()
-        label.text = "Hello World"
+        label.text = "Hello World!"
         label.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(label)
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
             label.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 20)
         ])
-        label.font = .systemFont(ofSize: 40, weight: UIFont.Weight(rawValue: 20))
+        label.font = .Roboto.thin.size(of: 40)
         label.textColor = .white
     }
 
