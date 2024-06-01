@@ -17,7 +17,7 @@ class OnboardingViewController: UIViewController {
     private var pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
     private let pageControl = UIPageControl()
     private let bottomButton = UIButton()
-    weak var viewOutPut: OnboardingViewOutput!
+    var viewOutPut: OnboardingViewOutput!
     
     init(pages: [OnboardingPartViewController] = [OnboardingPartViewController](), viewOutPut: OnboardingViewOutput!) {
         self.pages = pages
@@ -54,6 +54,7 @@ private extension OnboardingViewController {
             bottomButton.setTitle(pages[3].buttonText, for: .normal)
         case 3:
             print("Exit")
+            viewOutPut.onboardingFinish()
         default:
             break
         }
@@ -103,14 +104,14 @@ private extension OnboardingViewController {
         bottomButton.backgroundColor = AppColors.grey
         bottomButton.titleLabel?.font = .Roboto.bold.size(of: 18)
         bottomButton.setTitleColor(AppColors.black, for: .normal)
-        bottomButton.layer.cornerRadius = 16
+        bottomButton.layer.cornerRadius = 24
+        bottomButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             bottomButton.bottomAnchor.constraint(equalTo: pageControl.bottomAnchor, constant: -44),
             bottomButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             bottomButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             bottomButton.heightAnchor.constraint(equalToConstant: 50)
-        
         ])
     }
 }
