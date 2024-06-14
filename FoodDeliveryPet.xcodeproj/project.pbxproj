@@ -42,8 +42,10 @@
 		E00418062C0A462500C71460 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418052C0A462500C71460 /* UserStorage.swift */; };
 		E00418092C0B20B000C71460 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418082C0B20B000C71460 /* SceneFactory.swift */; };
 		E004180C2C0CAF8B00C71460 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E004180B2C0CAF8B00C71460 /* LoginViewController.swift */; };
-		E00418112C0CB08E00C71460 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418102C0CB08E00C71460 /* BottomView.swift */; };
+		E00418112C0CB08E00C71460 /* FDBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418102C0CB08E00C71460 /* FDBottomView.swift */; };
 		E00418162C10A05400C71460 /* FDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418152C10A05400C71460 /* FDButton.swift */; };
+		E00418182C13273100C71460 /* FDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418172C13273100C71460 /* FDTextField.swift */; };
+		E004181A2C132C7900C71460 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00418192C132C7900C71460 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,8 +86,10 @@
 		E00418052C0A462500C71460 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		E00418082C0B20B000C71460 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		E004180B2C0CAF8B00C71460 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E00418102C0CB08E00C71460 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		E00418102C0CB08E00C71460 /* FDBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDBottomView.swift; sourceTree = "<group>"; };
 		E00418152C10A05400C71460 /* FDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDButton.swift; sourceTree = "<group>"; };
+		E00418172C13273100C71460 /* FDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTextField.swift; sourceTree = "<group>"; };
+		E00418192C132C7900C71460 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +263,8 @@
 		E004180D2C0CB01B00C71460 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E00418102C0CB08E00C71460 /* BottomView.swift */,
+				E00418102C0CB08E00C71460 /* FDBottomView.swift */,
+				E00418172C13273100C71460 /* FDTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 		E004180F2C0CB04E00C71460 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				E00418192C132C7900C71460 /* LoginPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 				E00417F12C04C83A00C71460 /* OnboardingCoordinator.swift in Sources */,
 				E00417EF2C04C72100C71460 /* AppCoordinator.swift in Sources */,
 				E00417F52C04D0B500C71460 /* OrderCoordinator.swift in Sources */,
+				E00418182C13273100C71460 /* FDTextField.swift in Sources */,
 				E00417FF2C089DAF00C71460 /* OnboardingViewController.swift in Sources */,
 				E004180C2C0CAF8B00C71460 /* LoginViewController.swift in Sources */,
 				E00417B42C036D0200C71460 /* SceneDelegate.swift in Sources */,
@@ -401,11 +408,12 @@
 				E00417F72C04D10900C71460 /* ListCoordinator.swift in Sources */,
 				E00417F32C04D05C00C71460 /* HomeCoordinator.swift in Sources */,
 				E00417FB2C04D19B00C71460 /* TabBarController.swift in Sources */,
+				E004181A2C132C7900C71460 /* LoginPresenter.swift in Sources */,
 				E00418032C08AD4200C71460 /* OnboardingPartViewController.swift in Sources */,
 				E00418062C0A462500C71460 /* UserStorage.swift in Sources */,
 				E00418092C0B20B000C71460 /* SceneFactory.swift in Sources */,
 				E00417E62C03822100C71460 /* UIColor+Extension.swift in Sources */,
-				E00418112C0CB08E00C71460 /* BottomView.swift in Sources */,
+				E00418112C0CB08E00C71460 /* FDBottomView.swift in Sources */,
 				E00418162C10A05400C71460 /* FDButton.swift in Sources */,
 				E00418012C089E0B00C71460 /* OnboardingViewPresenter.swift in Sources */,
 				E00417ED2C04C23600C71460 /* Coordinator.swift in Sources */,
